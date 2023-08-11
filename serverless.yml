@@ -13,10 +13,6 @@ provider:
   region: ${env:AWS_REGION, 'us-west-1'}
   memorySize: 128
   timeout: 30
-  deploymentBucket:
-    name: serverless-github-actions-rest-api-${self:provider.stage}
-    serverSideEncryption: AES256
-    blockPublicAccess: true
   environment:
     LOG_LEVEL: debug
 
